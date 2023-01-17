@@ -37,11 +37,12 @@ class Seat:
 
 class Card:
 
-    def __init__(self, type, number, user, cvc):
+    def __init__(self, type, number, user, cvc, money):
         self.cvc = cvc
         self.type = type
         self.number = number
         self.user = user
+        self.money = money
 
     def add_user(self):
         connection = sqlite3.connect('banking.db')
