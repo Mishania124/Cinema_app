@@ -37,7 +37,7 @@ class Seat:
 
 class Card:
 
-    def __init__(self, type, number, user, cvc, money):
+    def __init__(self, type, number, user, cvc, money=2000):
         self.cvc = cvc
         self.type = type
         self.number = number
